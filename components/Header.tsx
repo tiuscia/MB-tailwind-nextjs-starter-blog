@@ -1,31 +1,31 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
+import Logo from '@/data/michael-bracken-logo.svg'
 import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
-import SearchButton from './SearchButton'
+// import SearchButton from './SearchButton'
 
 const Header = () => {
-  let headerClass = 'flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10'
+  let headerClass = 'flex items-center w-full bg-white dark:bg-[#09081a] justify-between py-8'
   if (siteMetadata.stickyNav) {
     headerClass += ' sticky top-0 z-50'
   }
 
+  const basePath = process.env.BASE_PATH || ''
+
   return (
     <header className={headerClass}>
       <Link href="/" aria-label={siteMetadata.headerTitle}>
-        <div className="flex items-center justify-between">
-          <div className="mr-3">
-            <Logo />
-          </div>
-          {typeof siteMetadata.headerTitle === 'string' ? (
+        <div className="flex items-center justify-between"> 
+          <img src={`${basePath}/static/images/michael-bracken-logo.svg`} className="h-[60px]" />
+          {/* {typeof siteMetadata.headerTitle === 'string' ? (
             <div className="hidden h-6 text-2xl font-semibold sm:block">
               {siteMetadata.headerTitle}
             </div>
           ) : (
             siteMetadata.headerTitle
-          )}
+          )} */}
         </div>
       </Link>
       <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
@@ -36,14 +36,14 @@ const Header = () => {
               <Link
                 key={link.title}
                 href={link.href}
-                className="block font-medium text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
+                className="block text-xl font-medium text-gray-900 hover:text-[#fd7b2f] dark:text-gray-100 dark:hover:text-[#fd7b2f]"
               >
                 {link.title}
               </Link>
             ))}
         </div>
-        <SearchButton />
-        <ThemeSwitch />
+        {/* <SearchButton /> */}
+        {/* <ThemeSwitch /> */}
         <MobileNav />
       </div>
     </header>

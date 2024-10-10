@@ -15,6 +15,54 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontSize: {
+        'heading-spacing-xl': ['4.3rem', {
+            lineHeight: '100%',
+            letterSpacing: '4px',
+            fontWeight: 400
+        }],
+        'heading-spacing-l': ['4rem', {
+            lineHeight: '100%',
+            letterSpacing: '4px',
+            fontWeight: 400
+        }],
+        'heading-spacing-m': ['3.4rem', {
+            lineHeight: '100%',
+            letterSpacing: '4px',
+            fontWeight: 400
+        }],
+        'heading-spacing-s': ['2.8rem', {
+            lineHeight: '100%',
+            letterSpacing: '3px',
+            fontWeight: 400
+        }],
+        'heading-spacing-xs': ['2.5rem', {
+            lineHeight: '120%',
+            letterSpacing: '2px',
+            fontWeight: 400
+        }],
+        'heading-spacing-xxs': ['1.8rem', {
+            lineHeight: '100%',
+            letterSpacing: '2px',
+            fontWeight: 400
+        }],
+        'paragraph-l': ['1.2rem', {
+          lineHeight: '160%',
+          fontWeight: 400
+        }],
+        'paragraph-m': ['1rem', {
+          lineHeight: '160%',
+          fontWeight: 400
+        }],
+        'paragraph-s': ['1rem', {
+          lineHeight: '160%',
+          fontWeight: 400
+        }],
+        'subtitle': ['20px', {
+            lineHeight: '1.5',
+            fontWeight: 400
+        }],
+      },
       lineHeight: {
         11: '2.75rem',
         12: '3rem',
@@ -23,6 +71,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
+        bebas: ['var(--font-space-bebas)', ...fontFamily.sans],
+        libre: ['var(--font-space-libre)', ...fontFamily.sans ],
+        albert: ['var(--font-space-albert)', ...fontFamily.sans],
       },
       colors: {
         primary: colors.pink,
