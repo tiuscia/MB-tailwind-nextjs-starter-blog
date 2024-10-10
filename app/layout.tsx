@@ -117,13 +117,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-[#09081a] dark:text-white">
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
-          <SectionContainer>
-            {/* <SearchProvider searchConfig={siteMetadata.search as SearchConfig}> */}
-              <Header />
-              <main className="mb-auto">{children}</main>
+            <SectionContainer>
+              {/* <SearchProvider searchConfig={siteMetadata.search as SearchConfig}> */}
+                <Header />
+            </SectionContainer>
+            <main className="mb-auto">{children}</main>
             {/* </SearchProvider> */}
             <Footer />
-          </SectionContainer>
         </ThemeProviders>
       </body>
     </html>

@@ -1,4 +1,5 @@
 import { Authors, allAuthors } from 'contentlayer/generated'
+import SectionContainer from '@/components/SectionContainer'
 import { MDXLayoutRenderer } from 'pliny/mdx-components'
 import AuthorLayout from '@/layouts/AuthorLayout'
 import { coreContent } from 'pliny/utils/contentlayer'
@@ -12,9 +13,12 @@ export default function Page() {
 
   return (
     <>
-      <AuthorLayout content={mainContent}>
-        <MDXLayoutRenderer code={author.body.code} />
-      </AuthorLayout>
+      <SectionContainer>
+        <AuthorLayout content={mainContent}>
+          <MDXLayoutRenderer code={author.body.code} />
+        </AuthorLayout>
+      </SectionContainer>
+
     </>
   )
 }
