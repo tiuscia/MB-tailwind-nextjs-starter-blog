@@ -1,12 +1,13 @@
 'use client'
 import { use, useRef } from 'react'
 import Link from '@/components/Link'
-import Tag from '@/components/Tag'
+// import Tag from '@/components/Tag'
 import SectionContainer from '@/components/SectionContainer'
 import Accordion from '@/components/Accordion'
+import Carousel from '@/components/Carousel/Carousel'
 import siteMetadata from '@/data/siteMetadata'
-import { formatDate } from 'pliny/utils/formatDate'
-import NewsletterForm from 'pliny/ui/NewsletterForm'
+// import { formatDate } from 'pliny/utils/formatDate'
+// import NewsletterForm from 'pliny/ui/NewsletterForm'
 
 const MAX_DISPLAY = 5
 const basePath = process.env.BASE_PATH || ''
@@ -16,13 +17,13 @@ export default function Home({ posts }) {
   const miniEndorsementRef = useRef(null)
   const scrollToMiniEndorsement = () => {
     if (miniEndorsementRef.current) {
-      miniEndorsementRef.current.scrollIntoView({ behavior: 'smooth' });
+      (miniEndorsementRef.current as HTMLElement).scrollIntoView({ behavior: 'smooth' });
     }
   }
 
   return (
     <>
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="">
         <SectionContainer>
           <div className='hero flex flex-col gap-4 mb-6 md:mb-8 lg:flex-row lg:mb-0 md:pb-8 lg:gap-8 xl:min-h-[500px] xl:pb-0 xl:mb-12 xl:max-h-[calc(100vh_-_130px)] xl:gap-8'>
             <div className="first-col w-full flex flex-col gap-6 md:gap-8 lg:gap-8 space-y-2 pb-8 pt-6 lg:pb-0 xl:gap-9">
@@ -67,102 +68,36 @@ export default function Home({ posts }) {
           <div className="py-6 md:py-8 lg:py-12">
             <Accordion />
           </div>
-
-          <div className="py-6 md:py-8 lg:py-12">
-            <div ref={miniEndorsementRef} id="mini-endorsement" className="border-8 border-[#fd7b2f] rounded-xl p-6 md:p-8 lg:p-12 text-center">
-              <h3 className=" text-heading-spacing-s font-bebas mb-5 font-extrabold text-gray-900 dark:text-gray-100 md:text-heading-spacing-m lg:text-heading-spacing-l xl:text-heading-spacing-xl">
-              You can help!
-              </h3>
-              <p className="font-libre mb-10 text-paragraph-s lg:text-paragraph-l max-w-[700px] mx-auto" >
-              Your Mini Endorsements to the Islander News is important to me and will help other voters to get to know me better.
-              </p>
-              <a 
-                href="mailto:editor@islandernews.com?subject=Endorse%20for%20Michael%20Bracken&cc=michael@brackenforkb.com"
-                className="bg-[#fd7b2f] text-heading-spacing-xxs md:text-heading-spacing-xs font-bebas flex items-center justify-center rounded-full gap-3 lg:gap-6 p-3 px-8 max-w-[80%] lg:max-w-[540px] mx-auto mb-10" >send your endorsement 
-                <svg 
-                  className="hidden md:block md:w-[40px] md:h-auto xl:w-[50px] group-hover:translate-x-3 transition-all duration-500" 
-                  width="100" height="100" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" fill="white" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
-              </a>
-              <p className="font-libre text-paragraph-s max-w-[650px] mx-auto" >
-              * Endorsements must be submitted with your name, limited to 75 words and by 5 p.m. Friday, the week before publications (Oct. 17, 24, 31). 
-              </p>
-
-            </div>
-          </div>
-        
         </SectionContainer>
 
-        {/* <SectionContainer>
-        </SectionContainer> */}
-        
-        {/* <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!posts.length && 'No posts found.'}
-          {posts.slice(0, MAX_DISPLAY).map((post) => {
-            const { slug, date, title, summary, tags } = post
-            return (
-              <li key={slug} className="py-12">
-                <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-                    <dl>
-                      <dt className="sr-only">Published on</dt>
-                      <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
-                      </dd>
-                    </dl>
-                    <div className="space-y-5 xl:col-span-3">
-                      <div className="space-y-6">
-                        <div>
-                          <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                            <Link
-                              href={`/blog/${slug}`}
-                              className="text-gray-900 dark:text-gray-100"
-                            >
-                              {title}
-                            </Link>
-                          </h2>
-                          <div className="flex flex-wrap">
-                            {tags.map((tag) => (
-                              <Tag key={tag} text={tag} />
-                            ))}
-                          </div>
-                        </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-                          {summary}
-                        </div>
-                      </div>
-                      <div className="text-base font-medium leading-6">
-                        <Link
-                          href={`/blog/${slug}`}
-                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                          aria-label={`Read more: "${title}"`}
-                        >
-                          Read more &rarr;
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            )
-          })}
-        </ul> */}
+        <Carousel />
+
+        <SectionContainer>
+          <div className="py-6 md:py-8 lg:py-12">
+              <div ref={miniEndorsementRef} id="mini-endorsement" className="border-8 bg-[#052c42] border-[#fd7b2f] rounded-xl p-6 md:p-8 lg:p-12 text-center">
+                <h3 className=" text-heading-spacing-s font-bebas mb-5 font-extrabold text-gray-900 dark:text-gray-100 md:text-heading-spacing-m lg:text-heading-spacing-l xl:text-heading-spacing-xl">
+                You can help!
+                </h3>
+                <p className="font-libre mb-10 text-paragraph-s lg:text-paragraph-l max-w-[700px] mx-auto" >
+                Your Mini Endorsements to the Islander News is important to me and will help other voters to get to know me better.
+                </p>
+                <a 
+                  href="mailto:editor@islandernews.com?subject=Endorse%20for%20Michael%20Bracken&cc=michaelfbracken@icloud.com"
+                  className="bg-[#fd7b2f] group text-heading-spacing-xxs md:text-heading-spacing-xs font-bebas flex items-center justify-center rounded-full gap-3 lg:gap-6 p-3 pt-[14px] px-8 max-w-[80%] lg:max-w-[540px] mx-auto mb-10" >
+                  <span>send your endorsement </span>
+                  <svg 
+                    className="hidden md:block md:w-[40px] md:h-auto xl:w-[50px] group-hover:translate-x-3 transition-all duration-500" 
+                    width="100" height="100" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" fill="white" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                </a>
+                <p className="font-libre text-paragraph-s max-w-[650px] mx-auto" >
+                * Endorsements must be submitted with your name, limited to 75 words and by 5 p.m. Friday, the week before publications (Oct. 17, 24, 31). 
+                </p>
+
+              </div>
+            </div>
+        </SectionContainer>
       </div>
-      {/* {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end text-base font-medium leading-6">
-          <Link
-            href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="All posts"
-          >
-            All Posts &rarr;
-          </Link>
-        </div>
-      )} */}
-      {/* {siteMetadata.newsletter?.provider && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )} */}
+      
     </>
   )
 }

@@ -1,0 +1,28 @@
+.carouselContainer {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.carousel {
+    display: flex;
+    animation: scroll 60s linear infinite;
+}
+
+.carouselContainer:hover .carousel {
+    animation-play-state: paused;
+}
+
+.carouselItem {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 10px)); /* Half the width plus half the gap */
+    }
+}
