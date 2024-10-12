@@ -55,16 +55,6 @@ export default function Home({ posts }) {
             </div>
           </div>
 
-          {/* <div className="py-6 md:py-8 lg:py-12">
-            <h3 className="font-albert text-2xl md:text-4xl font-semibold mb-6" >Why are you running for office?</h3>
-            <p className="font-libre mb-10 text-paragraph-s lg:text-paragraph-l">37 years ago, I met my wife, Christina, on KB and have since built our life and raised a family on this island paradise. We have a strong history of giving back to the community. Recently retired I have time and can offer 30+ years of leadership experience as the President of a 100-year-old, internationally recognized construction company. </p>
-
-            <h3 className="font-albert text-2xl md:text-4xl font-semibold mb-6" >What makes you the best candidate for the position you are seeking?</h3>
-            <p className="font-libre mb-10 text-paragraph-s lg:text-paragraph-l">I am a fiscal conservative who favors undertaking financially feasible projects and I am able to separate the desire to act and the ability to execute projects effectively. My expertise lies in waste control for multimillion-dollar projects, working with developers, architects and municipalities to implement affordable, long-lasting solutions.</p>
-
-            <h3 className="font-albert text-2xl md:text-4xl font-semibold mb-6" >What is the most pressing issue facing the community you wish to represent? </h3>
-            <p className="font-libre text-paragraph-s lg:text-paragraph-l">Reliable power is vital to our community’s safety and security. Without it, essential infrastructure systems fail. I support prioritizing underground power lines. As a municipality, we must also improve transportation & fortify infrastructure; this will enhance quality of life, boost home insurability, and ensure our island's continued prosperity.</p>
-          </div> */}
           <div className="py-6 md:py-8 lg:py-12">
             <Accordion />
           </div>
