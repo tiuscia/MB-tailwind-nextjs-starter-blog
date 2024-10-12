@@ -18,7 +18,6 @@ export default function Page() {
           <MDXLayoutRenderer code={author.body.code} />
         </AuthorLayout>
       </SectionContainer>
-
     </>
   )
 }

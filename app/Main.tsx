@@ -44,8 +44,15 @@ export default function Home({ posts }) {
                     className="object-contain "
                   />
                 </div>
-                <a
+                <button
                   onClick={scrollToMiniEndorsement}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      scrollToMiniEndorsement()
+                    }
+                  }}
+                  aria-label="Scroll to mini endorsement"
+                  tabIndex={0}
                   className="group mt-auto flex flex-row rounded-xl bg-[#345c72] p-6 hover:cursor-pointer md:mt-0 md:max-w-[40%] md:flex-col md:gap-6 lg:max-w-[60%] lg:flex-1 xl:min-w-[45%] xl:justify-center"
                 >
                   <span className="font-bebas text-heading-spacing-xs md:whitespace-normal md:text-heading-spacing-s lg:text-heading-spacing-xxs xl:text-heading-spacing-xs">
@@ -63,7 +70,7 @@ export default function Home({ posts }) {
                   >
                     <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
 
