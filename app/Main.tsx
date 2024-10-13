@@ -1,7 +1,7 @@
 'use client'
-import { use, useRef } from 'react'
+import { useRef } from 'react'
+import Image from 'next/image'
 import Link from '@/components/Link'
-// import Tag from '@/components/Tag'
 import SectionContainer from '@/components/SectionContainer'
 import Accordion from '@/components/Accordion'
 import Carousel from '@/components/Carousel/Carousel'
@@ -38,10 +38,12 @@ export default function Home({ posts }) {
               {/* #345c72 */}
               <div className="first-col_row flex flex-col gap-4 md:flex-row md:items-stretch md:justify-start xl:flex-1 xl:gap-6">
                 <div className=" mt-auto flex rounded-xl bg-[#fd7b2f] p-6 md:mt-0">
-                  <img
+                  <Image
                     src={`${basePath}/static/images/hero/sign-w.png`}
                     alt="michael bracken for KB council"
                     className="object-contain "
+                    width={810}
+                    height={439}
                   />
                 </div>
                 <button
@@ -53,9 +55,9 @@ export default function Home({ posts }) {
                   }}
                   aria-label="Scroll to mini endorsement"
                   tabIndex={0}
-                  className="group mt-auto flex flex-row rounded-xl bg-[#345c72] p-6 hover:cursor-pointer md:mt-0 md:max-w-[40%] md:flex-col md:gap-6 lg:max-w-[60%] lg:flex-1 xl:min-w-[45%] xl:justify-center"
+                  className="group relative mt-auto flex flex-row items-center md:items-start gap-4 md:gap-3 rounded-xl bg-[#345c72] p-6 hover:cursor-pointer md:mt-0 md:max-w-[40%] md:flex-col lg:max-w-[60%] lg:flex-1 xl:min-w-[45%] xl:justify-center"
                 >
-                  <span className="font-bebas text-heading-spacing-xs md:whitespace-normal md:text-heading-spacing-s lg:text-heading-spacing-xxs xl:text-heading-spacing-xs">
+                  <span className="font-bebas text-left text-heading-spacing-xs md:whitespace-normal md:text-heading-spacing-s lg:text-heading-spacing-xxs xl:text-heading-spacing-xs">
                     Mini endorsement
                   </span>
                   <svg
@@ -75,10 +77,12 @@ export default function Home({ posts }) {
             </div>
 
             <div className="second-col flex min-h-[80vh] w-full overflow-hidden rounded-xl md:h-[90vh] md:max-h-[530px] lg:h-auto lg:max-h-full ">
-              <img
+              <Image
                 src={`${basePath}/static/images/hero/michael-bracken.JPG`}
                 alt="michael bracken"
                 className="w-full rounded-xl object-cover md:object-[center_10%]"
+                width={729}
+                height={966}
               />
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import styles from './Carousel.module.css'
+import Image from 'next/image'
 
 const Carousel = () => {
   const basePath = process.env.BASE_PATH || ''
@@ -39,17 +40,12 @@ const Carousel = () => {
             key={index}
             className={`${styles.carouselItem} relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl ${index % 2 === 0 ? 'rotate-2' : '-rotate-2'}`}
           >
-            <img
-              alt={image.alt}
-              loading="lazy"
-              width="3744"
-              height="5616"
-              decoding="async"
-              data-nimg="1"
-              className={`absolute inset-0 h-full w-full object-cover ${image.objectPosition || ''}`}
-              sizes="(min-width: 640px) 18rem, 11rem"
+            <Image
               src={`${basePath}/static/images/carousel/${image.src}`}
-              style={{ color: 'transparent' }}
+              alt={image.alt}
+              width={500}
+              height={500}
+              className={`absolute inset-0 h-full w-full object-cover ${image.objectPosition || ''}`}
             />
           </div>
         ))}
