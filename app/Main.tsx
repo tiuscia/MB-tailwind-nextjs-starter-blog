@@ -55,9 +55,9 @@ export default function Home({ posts }) {
                   }}
                   aria-label="Scroll to mini endorsement"
                   tabIndex={0}
-                  className="group relative mt-auto flex flex-row items-center md:items-start gap-4 md:gap-3 rounded-xl bg-[#345c72] p-6 hover:cursor-pointer md:mt-0 md:max-w-[40%] md:flex-col lg:max-w-[60%] lg:flex-1 xl:min-w-[45%] xl:justify-center"
+                  className="group relative mt-auto flex flex-row items-center gap-4 rounded-xl bg-[#345c72] p-6 hover:cursor-pointer md:mt-0 md:max-w-[40%] md:flex-col md:items-start md:gap-3 lg:max-w-[60%] lg:flex-1 xl:min-w-[45%] xl:justify-center"
                 >
-                  <span className="font-bebas text-left text-heading-spacing-xs md:whitespace-normal md:text-heading-spacing-s lg:text-heading-spacing-xxs xl:text-heading-spacing-xs">
+                  <span className="text-left font-bebas text-heading-spacing-xs md:whitespace-normal md:text-heading-spacing-s lg:text-heading-spacing-xxs xl:text-heading-spacing-xs">
                     Mini endorsement
                   </span>
                   <svg
