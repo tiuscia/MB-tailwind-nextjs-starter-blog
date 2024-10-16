@@ -13,9 +13,9 @@ export default function AuthorLayout({ children, content }: Props) {
 
   return (
     <>
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="divide-y divide-gray-700 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="font-albert text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="font-albert text-3xl font-extrabold leading-9 tracking-tight text-gray-100 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Why Serve?
           </h1>
         </div>
@@ -33,8 +33,8 @@ export default function AuthorLayout({ children, content }: Props) {
             <h3 className="pb-2 pt-4 font-albert text-2xl font-bold leading-8 tracking-tight">
               {name}
             </h3>
-            <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
-            <div className="text-gray-500 dark:text-gray-400">{company}</div>
+            <div className="text-gray-400 dark:text-gray-400">{occupation}</div>
+            <div className="text-gray-400 dark:text-gray-400">{company}</div>
             <div className="flex items-center space-x-3 pt-6">
               <SocialIcon kind="mail" href={`mailto:${email}`} />
               <SocialIcon
@@ -44,7 +44,7 @@ export default function AuthorLayout({ children, content }: Props) {
               />
             </div>
           </div>
-          <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
+          <div className="prose max-w-none pb-8 pt-8 prose-invert dark:prose-invert xl:col-span-2">
             <p className="mb-10 font-libre text-paragraph-s lg:text-paragraph-l">
               For me, the answer is straightforward. We love Key Biscayne. I met my wife, Christina,
               in Key Biscayne 37 years ago, and we have since built our life and raised a family on

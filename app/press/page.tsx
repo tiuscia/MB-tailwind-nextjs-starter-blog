@@ -9,9 +9,9 @@ export default function Projects() {
   return (
     <>
       <SectionContainer>
-        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="divide-y divide-gray-700 dark:divide-gray-700">
           <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-            <h1 className="font-albert text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            <h1 className="font-albert text-3xl font-extrabold leading-9 tracking-tight text-gray-100 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Press
             </h1>
             {/* <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">

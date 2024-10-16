@@ -59,7 +59,7 @@ module.exports = {
           fontWeight: 400
         }],
         'subtitle': ['20px', {
-            lineHeight: '1.5',
+            lineHeight: '1.7',
             fontWeight: 400
         }],
       },

@@ -27,12 +27,12 @@ export default function Home({ posts }) {
           <div className="hero mb-6 flex flex-col gap-4 md:mb-8 md:pb-8 lg:mb-0 lg:flex-row lg:gap-8 xl:mb-12 xl:max-h-[calc(100vh_-_130px)] xl:min-h-[500px] xl:gap-8 xl:pb-0">
             <div className="first-col flex w-full flex-col gap-6 space-y-2 pb-8 pt-6 md:gap-8 lg:gap-8 lg:pb-0 xl:gap-9">
               <div className="first-col_content lg:pr-8">
-                <h1 className="mb-5 font-bebas text-heading-spacing-s font-extrabold text-gray-900 dark:text-gray-100 md:text-heading-spacing-m lg:text-heading-spacing-l xl:text-heading-spacing-xl">
-                  Good communication and civil dialogue
+                <h1 className="mb-5 font-bebas text-heading-spacing-s font-extrabold text-gray-100 dark:text-gray-100 md:text-heading-spacing-m lg:text-heading-spacing-l xl:text-heading-spacing-xl">
+                  Power Key Biscayne
                 </h1>
-                <p className="font-libre text-subtitle text-gray-500 dark:text-gray-400">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim
-                  blandit purus, non suscipit nunc dapibus non.
+                <p className="font-libre text-subtitle text-gray-400 dark:text-gray-400">
+                  Let's undergorund our power. <br />
+                  When we have power, life is safe, secure and productive.
                 </p>
               </div>
               {/* #345c72 */}
@@ -101,7 +101,7 @@ export default function Home({ posts }) {
               id="mini-endorsement"
               className="rounded-xl border-8 border-[#fd7b2f] bg-[#052c42] p-6 text-center md:p-8 lg:p-12"
             >
-              <h3 className=" mb-5 font-bebas text-heading-spacing-s font-extrabold text-gray-900 dark:text-gray-100 md:text-heading-spacing-m lg:text-heading-spacing-l xl:text-heading-spacing-xl">
+              <h3 className=" mb-5 font-bebas text-heading-spacing-s font-extrabold text-gray-100 dark:text-gray-100 md:text-heading-spacing-m lg:text-heading-spacing-l xl:text-heading-spacing-xl">
                 You can help!
               </h3>
               <p className="mx-auto mb-10 max-w-[700px] font-libre text-paragraph-s lg:text-paragraph-l">
