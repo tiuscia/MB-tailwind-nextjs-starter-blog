@@ -7,6 +7,12 @@ interface Project {
 
 const projectsData: Project[] = [
   {
+    title: 'Michael shares his personal story, what brought him to Key Biscayne, and why he decided to run for office. ',
+    description: `Key Biscayne Stories Podcast`,
+    imgSrc: '/static/images/carousel/surf-cropped.png',
+    href: 'https://youtu.be/zkMfa_AfobM',
+  },
+  {
     title: 'Podcast: Bracken, Jenkins-Lopez sound off on Big Dig',
     description: `kbindependent.org`,
     imgSrc: '/static/images/press/Podcast-Bracken-Jenkins-Lopez-Big Dig.png',

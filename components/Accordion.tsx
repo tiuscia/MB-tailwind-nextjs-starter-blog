@@ -15,12 +15,12 @@ const Accordion = () => {
         <h2 id="accordion-open-heading-1">
           <button
             type="button"
-            className="flex w-full items-center justify-between gap-3 rounded-t-xl border border-b-0 border-gray-200 p-5 font-albert text-2xl font-semibold text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 md:text-4xl lg:px-8 lg:py-7 rtl:text-right"
+            className="flex w-full items-center justify-between gap-3 rounded-t-xl border border-b-0 border-gray-700 p-5 font-albert text-2xl font-semibold text-gray-400 hover:bg-gray-800 focus:ring-4 focus:ring-gray-800 md:text-4xl lg:px-8 lg:py-7 rtl:text-right"
             onClick={() => toggleAccordion(0)}
             aria-expanded={openIndex === 0}
             aria-controls="accordion-open-body-1"
           >
-            <span className="mr-3 flex items-center text-white lg:mr-6">
+            <span className="mr-3 flex items-center text-left text-white lg:mr-6">
               Why are you running for office?
             </span>
             <svg
@@ -46,7 +46,7 @@ const Accordion = () => {
           className={openIndex === 0 ? '' : 'hidden'}
           aria-labelledby="accordion-open-heading-1"
         >
-          <div className="border border-b-0 border-gray-200 p-5 dark:border-gray-700  dark:bg-gray-900 lg:px-8 lg:py-8">
+          <div className="border border-b-0 border-gray-700 bg-gray-900 p-5 lg:px-8 lg:py-8">
             <p className="mb-2 font-libre text-paragraph-s text-gray-200 lg:text-paragraph-l">
               37 years ago, I met my wife, Christina, on KB and have since built our life and raised
               a family on this island paradise. We have a strong history of giving back to the
@@ -62,12 +62,12 @@ const Accordion = () => {
         <h2 id="accordion-open-heading-2">
           <button
             type="button"
-            className="flex w-full items-center justify-between gap-3 border border-b-0 border-gray-200 p-5 text-left font-albert text-2xl font-semibold text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 md:text-4xl lg:px-8 lg:py-7 rtl:text-right"
+            className="flex w-full items-center justify-between gap-3 rounded-t-xl border border-b-0 border-gray-700 p-5 font-albert text-2xl font-semibold text-gray-400 hover:bg-gray-800 focus:ring-4 focus:ring-gray-800 md:text-4xl lg:px-8 lg:py-7 rtl:text-right"
             onClick={() => toggleAccordion(1)}
             aria-expanded={openIndex === 1}
             aria-controls="accordion-open-body-2"
           >
-            <span className="mr-3 flex items-center text-white lg:mr-6">
+            <span className="mr-3 flex items-center text-left text-white lg:mr-6">
               What makes you the best candidate for the position you are seeking?
             </span>
             <svg
@@ -109,12 +109,12 @@ const Accordion = () => {
         <h2 id="accordion-open-heading-3">
           <button
             type="button"
-            className="flex w-full items-center justify-between gap-3 border border-gray-200 p-5 text-left font-albert text-2xl font-semibold text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800 md:text-4xl lg:px-8 lg:py-7 rtl:text-right"
+            className="flex w-full items-center justify-between gap-3 rounded-t-xl border border-gray-700 p-5 font-albert text-2xl font-semibold text-gray-400 hover:bg-gray-800 focus:ring-4 focus:ring-gray-800 md:text-4xl lg:px-8 lg:py-7 rtl:text-right"
             onClick={() => toggleAccordion(2)}
             aria-expanded={openIndex === 2}
             aria-controls="accordion-open-body-3"
           >
-            <span className="mr-3 flex items-center text-white lg:mr-6">
+            <span className="mr-3 flex items-center text-left text-white lg:mr-6">
               What is the most pressing issue facing the community you wish to represent?
             </span>
             <svg
@@ -140,7 +140,7 @@ const Accordion = () => {
           className={openIndex === 2 ? '' : 'hidden'}
           aria-labelledby="accordion-open-heading-3"
         >
-          <div className="border border-gray-200 p-5 dark:border-gray-700 lg:px-8 lg:py-8">
+          <div className="border border-gray-700 p-5 dark:border-gray-700 lg:px-8 lg:py-8">
             <p className="mb-2 font-libre text-paragraph-s text-gray-200 lg:text-paragraph-l">
               Reliable power is vital to{' '}
               <span className="font-bold text-white">our community's safety and security</span>.
