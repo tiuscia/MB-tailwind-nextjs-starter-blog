@@ -44,7 +44,7 @@ export default function AuthorLayout({ children, content }: Props) {
               />
             </div>
           </div>
-          <div className="prose max-w-none pb-8 pt-8 prose-invert dark:prose-invert xl:col-span-2">
+          <div className="prose prose-invert max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
             <p className="mb-10 font-libre text-paragraph-s lg:text-paragraph-l">
               For me, the answer is straightforward. We love Key Biscayne. I met my wife, Christina,
               in Key Biscayne 37 years ago, and we have since built our life and raised a family on
