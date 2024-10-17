@@ -1,15 +1,15 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Michael Bracken - official website',
+  title: 'Michael Bracken for Key Biscayne Village Council - official website',
   author: 'Michael Bracken',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  headerTitle: 'Michael Bracken',
+  description: 'Michael Bracken for Village Council',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
-  siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
-  socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
+  siteUrl: 'https://michaelbracken.us',
+  siteRepo: 'https://github.com/tiuscia/MB-tailwind-nextjs-starter-blog',
+  siteLogo: `${process.env.BASE_PATH || ''}/static/images/og.png`,
+  socialBanner: `${process.env.BASE_PATH || ''}/static/images/og.png`,
   // mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'michaelfbracken@icloud.com',
   // github: 'https://github.com',
