@@ -37,14 +37,28 @@ export default function Home({ posts }) {
               </div>
               {/* #345c72 */}
               <div className="first-col_row flex flex-col gap-4 md:flex-row md:items-stretch md:justify-start xl:flex-1 xl:gap-6">
-                <div className=" mt-auto flex rounded-xl bg-[#fd7b2f] p-6 md:mt-0">
-                  <Image
+                <div className=" mt-auto flex rounded-xl bg-[#fd7b2f] p-6 md:mt-0 md:items-center md:flex-1">
+                  {/* <Image
                     src={`${basePath}/static/images/hero/sign-w.png`}
                     alt="michael bracken for KB council"
                     className="object-contain "
                     width={810}
                     height={439}
-                  />
+                  /> */}
+                  <ul className="list-disc font-bebas text-[26px] leading-[32px] pl-6 [&>li::marker]:text-[#345c72] xl:text-[32px] xl:leading-[40px] xl:tracking-wider">
+                    <li className="mb-2">
+                      <span>Fiscal Responsibility</span>
+                    </li>
+                    <li className="mb-2">
+                      <span>Undergrounding</span>
+                    </li>
+                    <li className="mb-2">
+                      <span>Infrastracture Fortification</span>
+                    </li>
+                    <li>
+                      <span>Positive Communication</span>
+                    </li>
+                  </ul>
                 </div>
                 <button
                   onClick={scrollToMiniEndorsement}
@@ -55,7 +69,7 @@ export default function Home({ posts }) {
                   }}
                   aria-label="Scroll to mini endorsement"
                   tabIndex={0}
-                  className="group relative mt-auto flex flex-row items-center gap-4 rounded-xl bg-[#345c72] p-6 hover:cursor-pointer md:mt-0 md:max-w-[40%] md:flex-col md:items-start md:gap-3 lg:max-w-[60%] lg:flex-1 xl:min-w-[45%] xl:justify-center"
+                  className="group relative mt-auto flex flex-row items-center gap-4 rounded-xl bg-[#345c72] p-6 hover:cursor-pointer md:mt-0 md:max-w-[44%] md:flex-col md:items-start md:gap-3 lg:max-w-[60%] lg:flex-1 xl:min-w-[45%] xl:justify-center"
                 >
                   <span className="text-left font-bebas text-heading-spacing-xs md:whitespace-normal md:text-heading-spacing-s lg:text-heading-spacing-xxs xl:text-heading-spacing-xs">
                     Mini endorsement
@@ -127,7 +141,7 @@ export default function Home({ posts }) {
                 </svg>
               </a>
               <p className="mx-auto max-w-[650px] font-libre text-paragraph-s">
-                * Endorsements must be submitted with your name, limited to 75 words and by 5 p.m.
+                * Endorsements must be submitted with your name, limited to 75 words or less and by 5 p.m.
                 Friday, the week before publications (Oct. 17, 24, 31).
               </p>
             </div>

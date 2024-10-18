@@ -7,13 +7,14 @@ const Carousel = () => {
   const carouselRef = useRef<HTMLDivElement>(null)
 
   const images = [
-    { src: 'bike.jpg', alt: 'Bike', objectPosition: 'object-[72%_center]' },
-    { src: 'boat.jpg', alt: 'Boat' },
-    { src: 'sea.jpg', alt: 'Sea' },
-    { src: 'sign.jpg', alt: 'Sign' },
-    { src: 'oktober.jpg', alt: 'Oktober' },
-    { src: 'surf.jpg', alt: 'Surf', objectPosition: 'object-[center_13%]' },
-    { src: 'dog.jpg', alt: 'Dog' },
+    { src: 'bike.jpg', alt: 'Michael BrackenBike', objectPosition: 'object-[72%_center]' },
+    { src: 'boat.jpg', alt: 'Michael Bracken Boat' },
+    { src: 'michael-bracken-village-council.png', alt: 'Michael Bracken for Village Council', objectPosition: 'object-[center_2%]' },
+    { src: 'sea.jpg', alt: 'Michael Bracken Sea' },
+    { src: 'sign.jpg', alt: ' Michael BrackenSign' },
+    { src: 'oktober.jpg', alt: 'Michael Bracken Oktober' },
+    { src: 'surf.jpg', alt: 'Michael Bracken Surf', objectPosition: 'object-[center_13%]' },
+    { src: 'dog.jpg', alt: 'Michael Bracken Dog' },
     {
       src: 'christina-michael-wind.jpg',
       alt: 'Christina Michael Wind',
