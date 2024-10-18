@@ -9,7 +9,11 @@ const Carousel = () => {
   const images = [
     { src: 'bike.jpg', alt: 'Michael BrackenBike', objectPosition: 'object-[72%_center]' },
     { src: 'boat.jpg', alt: 'Michael Bracken Boat' },
-    { src: 'michael-bracken-village-council.png', alt: 'Michael Bracken for Village Council', objectPosition: 'object-[center_2%]' },
+    {
+      src: 'michael-bracken-village-council.png',
+      alt: 'Michael Bracken for Village Council',
+      objectPosition: 'object-[center_2%]',
+    },
     { src: 'sea.jpg', alt: 'Michael Bracken Sea' },
     { src: 'sign.jpg', alt: ' Michael BrackenSign' },
     { src: 'oktober.jpg', alt: 'Michael Bracken Oktober' },

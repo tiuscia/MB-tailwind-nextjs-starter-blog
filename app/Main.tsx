@@ -37,7 +37,7 @@ export default function Home({ posts }) {
               </div>
               {/* #345c72 */}
               <div className="first-col_row flex flex-col gap-4 md:flex-row md:items-stretch md:justify-start xl:flex-1 xl:gap-6">
-                <div className=" mt-auto flex rounded-xl bg-[#fd7b2f] p-6 md:mt-0 md:items-center md:flex-1">
+                <div className=" mt-auto flex rounded-xl bg-[#fd7b2f] p-6 md:mt-0 md:flex-1 md:items-center">
                   {/* <Image
                     src={`${basePath}/static/images/hero/sign-w.png`}
                     alt="michael bracken for KB council"
@@ -45,7 +45,7 @@ export default function Home({ posts }) {
                     width={810}
                     height={439}
                   /> */}
-                  <ul className="list-disc font-bebas text-[26px] leading-[32px] pl-6 [&>li::marker]:text-[#345c72] xl:text-[32px] xl:leading-[40px] xl:tracking-wider">
+                  <ul className="list-disc pl-6 font-bebas text-[26px] leading-[32px] xl:text-[32px] xl:leading-[40px] xl:tracking-wider [&>li::marker]:text-[#345c72]">
                     <li className="mb-2">
                       <span>Fiscal Responsibility</span>
                     </li>
@@ -141,8 +141,8 @@ export default function Home({ posts }) {
                 </svg>
               </a>
               <p className="mx-auto max-w-[650px] font-libre text-paragraph-s">
-                * Endorsements must be submitted with your name, limited to 75 words or less and by 5 p.m.
-                Friday, the week before publications (Oct. 17, 24, 31).
+                * Endorsements must be submitted with your name, limited to 75 words or less and by
+                5 p.m. Friday, the week before publications (Oct. 17, 24, 31).
               </p>
             </div>
           </div>
